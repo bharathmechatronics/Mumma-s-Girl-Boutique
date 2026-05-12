@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumma's Girl Boutique | Redefining Elegance</title>
+    <meta name="description" content="Premium luxury women's and girls' boutique in JP Nagar, Bangalore offering designer dresses, bridal collections, and custom stitching.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        beige: {
+                            DEFAULT: '#F5F5DC',
+                            100: '#FDFBF7',
+                            200: '#F9F6ED',
+                            300: '#F0EAD6',
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F3E5AB',
+                            dark: '#AA8C2C',
+                        },
+                        pink: {
+                            soft: '#FFD1DC',
+                            dusty: '#DCAE96',
+                        },
+                        dark: {
+                            DEFAULT: '#121212',
+                            light: '#1A1A1A'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.05)',
+                        'gold': '0 4px 20px 0 rgba(212, 175, 55, 0.2)',
+                        'glow': '0 0 40px rgba(212, 175, 55, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-dark text-beige-100 overflow-x-hidden selection:bg-gold selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#" class="font-serif text-2xl md:text-3xl font-bold tracking-wider text-white transition-colors duration-300" id="nav-brand">
+                    Mumma's Girl Boutique
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm uppercase tracking-widest text-white hover:text-gold transition-colors font-medium nav-link">Our Story</a>
+                    <a href="#collections" class="text-sm uppercase tracking-widest text-white hover:text-gold transition-colors font-medium nav-link">Collections</a>
+                    <a href="#services" class="text-sm uppercase tracking-widest text-white hover:text-gold transition-colors font-medium nav-link">Services</a>
+                    <a href="#contact" class="px-6 py-2 border border-gold text-gold hover:bg-gold hover:text-white transition-all duration-300 rounded-sm text-sm uppercase tracking-widest nav-btn">Visit Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white nav-link" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed inset-0 bg-dark/95 backdrop-blur-md z-40 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8 hidden">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-white text-3xl hover:text-gold transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="#about" class="text-xl uppercase tracking-widest text-white hover:text-gold transition-colors mobile-link">Our Story</a>
+            <a href="#collections" class="text-xl uppercase tracking-widest text-white hover:text-gold transition-colors mobile-link">Collections</a>
+            <a href="#services" class="text-xl uppercase tracking-widest text-white hover:text-gold transition-colors mobile-link">Services</a>
+            <a href="#contact" class="text-xl uppercase tracking-widest text-gold hover:text-white transition-colors mobile-link">Visit Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-dark z-0">
+            <img src="collection_bridal.png" alt="Luxury Fashion" class="w-full h-full object-cover opacity-50 scale-105 hero-img-anim" />
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/40 to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+            <h3 class="text-white uppercase tracking-[0.2em] text-sm md:text-base font-semibold mb-4 animate-fade-in-up" style="animation-delay: 0.2s;">
+                <span class="text-gold text-lg md:text-xl font-bold">Welcome</span> to the Exclusivity of
+            </h3>
+            <h1 class="font-serif text-6xl md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-gold to-beige-100 font-bold mb-4 leading-tight animate-fade-in-up" style="animation-delay: 0.4s; filter: drop-shadow(0 0 20px rgba(212,175,55,0.2));">
+                Binaka Couture
+            </h1>
+            <h2 class="font-serif text-2xl md:text-3xl text-beige-300 italic mb-8 animate-fade-in-up" style="animation-delay: 0.5s;">
+                by Mumma's Girl Boutique
+            </h2>
+            <p class="text-beige-200 text-lg md:text-xl font-light tracking-wide mb-10 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.6s;">
+                Redefining Designer Dresses & Elegance for Girls & Women. Discover bespoke tailoring, party wear, and exclusive custom designs.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 animate-fade-in-up" style="animation-delay: 0.8s;">
+                <a href="#collections" class="px-8 py-4 bg-gradient-to-r from-gold to-gold-dark hover:from-gold-dark hover:to-gold text-white uppercase tracking-widest text-sm font-medium transition-all duration-300 w-full sm:w-auto text-center shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] rounded-sm">Explore Collection</a>
+                <a href="https://wa.me/919964999586" target="_blank" rel="noopener noreferrer" class="px-8 py-4 border border-white/50 text-white hover:bg-white hover:text-dark uppercase tracking-widest text-sm font-medium transition-all duration-300 w-full sm:w-auto text-center rounded-sm flex items-center justify-center gap-2 backdrop-blur-sm">
+                    <i class="fab fa-whatsapp text-lg"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-10">
+            <a href="#about"><i class="fas fa-chevron-down text-2xl opacity-70 hover:opacity-100 transition-opacity hover:text-gold"></i></a>
+        </div>
+    </header>
+
+    <!-- About Boutique Section -->
+    <section id="about" class="py-32 relative bg-gradient-to-b from-dark via-[#1a1814] to-dark overflow-hidden">
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gold opacity-5 rounded-full blur-[150px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-pink-soft opacity-5 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="lg:w-1/2 reveal">
+                    <div class="relative group">
+                        <img src="boutique_interior.png" alt="Boutique Interior" class="rounded-sm shadow-[0_0_50px_rgba(0,0,0,0.5)] z-10 relative transition-transform duration-700 group-hover:scale-[1.02]">
+                        <div class="absolute -bottom-6 -right-6 w-full h-full border border-gold/40 rounded-sm z-0 transition-transform duration-700 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 reveal">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-[1px] w-12 bg-gold"></div>
+                        <h4 class="text-gold uppercase tracking-widest text-sm font-semibold">Our Story</h4>
+                    </div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">Crafting Elegance for <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light italic">Every Occasion</span></h2>
+                    <p class="text-beige-300 mb-6 font-light leading-relaxed text-lg">
+                        Located in the heart of JP Nagar, Bangalore, <strong>Mumma's Girl Boutique</strong> is your premier destination for luxury women's and little girls' fashion. We specialize in curating an exclusive collection that blends traditional craftsmanship with enchanting modern aesthetics.
+                    </p>
+                    <p class="text-beige-300 mb-10 font-light leading-relaxed text-lg">
+                        From exquisite designer dresses for girls to handcrafted bridal collections and personalized custom stitching, our expert artisans ensure every piece fits beautifully and feels extraordinary. Step into our world of premium fashion services tailored exclusively for you.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold uppercase tracking-widest text-sm font-medium hover:text-white transition-colors group">
+                        <span>Visit Our Store</span>
+                        <i class="fas fa-arrow-right transform group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section id="collections" class="py-32 relative bg-[#151515]">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20 reveal">
+                <h4 class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Discover</h4>
+                <h2 class="font-serif text-5xl md:text-6xl font-bold text-white mb-6">Signature Collections</h2>
+                <div class="w-24 h-[1px] bg-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="group cursor-pointer reveal">
+                    <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
+                        <img src="collection_girls_new.jpg" alt="Girls Designer Dresses" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <div class="w-10 h-[1px] bg-gold mb-4 transform origin-left scale-0 group-hover:scale-100 transition-transform duration-500 delay-100"></div>
+                            <h3 class="font-serif text-2xl text-white mb-2">Girls' Couture</h3>
+                            <p class="text-xs text-beige-300 font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Magical party dresses</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="group cursor-pointer reveal" style="transition-delay: 150ms;">
+                    <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
+                        <img src="mom_daughter_combo.jpg" alt="Mom Daughter Combo" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <div class="w-10 h-[1px] bg-gold mb-4 transform origin-left scale-0 group-hover:scale-100 transition-transform duration-500 delay-100"></div>
+                            <h3 class="font-serif text-2xl text-white mb-2">Mom Daughter Combo</h3>
+                            <p class="text-xs text-beige-300 font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Matching elegant outfits</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="group cursor-pointer reveal" style="transition-delay: 300ms;">
+                    <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
+                        <img src="collection_bridal.png" alt="Bridal Collection" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <div class="w-10 h-[1px] bg-gold mb-4 transform origin-left scale-0 group-hover:scale-100 transition-transform duration-500 delay-100"></div>
+                            <h3 class="font-serif text-2xl text-white mb-2">Bridal & Couture</h3>
+                            <p class="text-xs text-beige-300 font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Luxury bridal outfits</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="group cursor-pointer reveal" style="transition-delay: 450ms;">
+                    <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
+                        <img src="collection_party_new.jpg" alt="Party Wear" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <div class="w-10 h-[1px] bg-gold mb-4 transform origin-left scale-0 group-hover:scale-100 transition-transform duration-500 delay-100"></div>
+                            <h3 class="font-serif text-2xl text-white mb-2">Party Wear</h3>
+                            <p class="text-xs text-beige-300 font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Elegant designer outfits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16 reveal">
+                <a href="https://www.instagram.com/binakacouture?igsh=OGIycTRiZmptZHY5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 border border-gold text-gold hover:bg-gold hover:text-dark uppercase tracking-widest text-sm font-medium transition-all duration-300 rounded-sm">
+                    <i class="fab fa-instagram text-lg"></i> View Full Catalog on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 bg-dark relative border-t border-white/5">
+        <div class="absolute top-1/2 left-0 w-96 h-96 bg-gold opacity-5 rounded-full blur-[120px] -translate-y-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold opacity-5 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20 reveal">
+                <h4 class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Expertise</h4>
+                <h2 class="font-serif text-5xl md:text-6xl font-bold text-white mb-6">Premium Services</h2>
+                <div class="w-24 h-[1px] bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-[#1a1a1a] p-10 rounded-sm text-center reveal hover:-translate-y-3 transition-all duration-500 border border-white/5 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(212,175,55,0.1)]">
+                    <div class="w-20 h-20 bg-dark rounded-full flex items-center justify-center mx-auto mb-8 text-gold border border-gold/20">
+                        <i class="fas fa-cut text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 text-white">Custom Stitching</h3>
+                    <p class="text-beige-300 font-light text-sm leading-relaxed">Bespoke tailoring to ensure the perfect fit for your body type. Experience unmatched craftsmanship.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-[#1a1a1a] p-10 rounded-sm text-center reveal hover:-translate-y-3 transition-all duration-500 border border-white/5 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(212,175,55,0.1)]" style="transition-delay: 100ms;">
+                    <div class="w-20 h-20 bg-dark rounded-full flex items-center justify-center mx-auto mb-8 text-gold border border-gold/20">
+                        <i class="fas fa-gem text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 text-white">Bridal Designing</h3>
+                    <p class="text-beige-300 font-light text-sm leading-relaxed">Turn your dream wedding attire into reality with our exclusive bridal designing services and consultations.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-[#1a1a1a] p-10 rounded-sm text-center reveal hover:-translate-y-3 transition-all duration-500 border border-white/5 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(212,175,55,0.1)]" style="transition-delay: 200ms;">
+                    <div class="w-20 h-20 bg-dark rounded-full flex items-center justify-center mx-auto mb-8 text-gold border border-gold/20">
+                        <i class="fas fa-child text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 text-white">Girls' Designer Wear</h3>
+                    <p class="text-beige-300 font-light text-sm leading-relaxed">From enchanting birthday gowns to festive ethnic wear, we create magical outfits for your little ones.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-[#1a1a1a] p-10 rounded-sm text-center reveal hover:-translate-y-3 transition-all duration-500 border border-white/5 hover:border-gold/30 hover:shadow-[0_0_30px_rgba(212,175,55,0.1)]" style="transition-delay: 300ms;">
+                    <div class="w-20 h-20 bg-dark rounded-full flex items-center justify-center mx-auto mb-8 text-gold border border-gold/20">
+                        <i class="fas fa-user-tie text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 text-white">Personal Styling</h3>
+                    <p class="text-beige-300 font-light text-sm leading-relaxed">Personalized fashion consultations to help you discover a style that truly reflects your elegance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-32 bg-gradient-to-b from-[#151515] to-dark relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 reveal">
+                <h4 class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Testimonials</h4>
+                <h2 class="font-serif text-5xl md:text-6xl font-bold text-white mb-6">Client Experiences</h2>
+                <div class="w-24 h-[1px] bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 reveal">
+                <!-- Review 1 -->
+                <div class="bg-[#1a1a1a] p-10 rounded-sm shadow-xl relative border border-white/5">
+                    <div class="absolute -top-6 left-10 text-gold opacity-30">
+                        <i class="fas fa-quote-left text-7xl"></i>
+                    </div>
+                    <div class="flex text-gold mb-6 text-sm relative z-10 mt-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-beige-300 font-light italic mb-8 leading-relaxed relative z-10 text-lg">
+                        "The craftsmanship and attention to detail at Mumma's Girl Boutique are truly unparalleled. My daughter's birthday gown was stitched to absolute perfection. It was magical! Highly recommend their bespoke services."
+                    </p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-gold font-serif text-xl border border-gold/30">
+                            P
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-white text-lg">Priya Sharma</h4>
+                            <p class="text-xs text-gold uppercase tracking-widest mt-1">Happy Mother</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-[#1a1a1a] p-10 rounded-sm shadow-xl relative border border-white/5">
+                    <div class="absolute -top-6 left-10 text-gold opacity-30">
+                        <i class="fas fa-quote-left text-7xl"></i>
+                    </div>
+                    <div class="flex text-gold mb-6 text-sm relative z-10 mt-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-beige-300 font-light italic mb-8 leading-relaxed relative z-10 text-lg">
+                        "I had a fantastic experience. They transformed my vision into a stunning reality. The premium fabrics and the elegant stitching style give their designs a truly luxurious feel. The best boutique in JP Nagar!"
+                    </p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-gold font-serif text-xl border border-gold/30">
+                            A
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-white text-lg">Ananya Reddy</h4>
+                            <p class="text-xs text-gold uppercase tracking-widest mt-1">Regular Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-[#1a1a1a] p-10 rounded-sm shadow-xl relative border border-white/5">
+                    <div class="absolute -top-6 left-10 text-gold opacity-30">
+                        <i class="fas fa-quote-left text-7xl"></i>
+                    </div>
+                    <div class="flex text-gold mb-6 text-sm relative z-10 mt-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-beige-300 font-light italic mb-8 leading-relaxed relative z-10 text-lg">
+                        "Outstanding bridal styling services! They possess a remarkable eye for modern aesthetics. Every piece I've had tailored here fits like a dream. The ambiance and professionalism make you feel like royalty."
+                    </p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-gold font-serif text-xl border border-gold/30">
+                            K
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-white text-lg">Kavya M.</h4>
+                            <p class="text-xs text-gold uppercase tracking-widest mt-1">Fashion Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Maps Section -->
+    <section id="contact" class="py-0 relative border-t border-white/10">
+        <div class="flex flex-col lg:flex-row min-h-[700px]">
+            <!-- Info Side -->
+            <div class="lg:w-1/2 bg-[#121212] p-12 lg:p-24 flex flex-col justify-center reveal relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gold opacity-5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+                <h4 class="text-gold uppercase tracking-widest text-sm font-semibold mb-4 relative z-10">Get In Touch</h4>
+                <h2 class="font-serif text-5xl md:text-6xl font-bold mb-12 text-white relative z-10">Visit Our Boutique</h2>
+                
+                <div class="space-y-10 relative z-10">
+                    <div class="flex items-start gap-6 group">
+                        <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0 text-gold border border-gold/30 group-hover:bg-gold group-hover:text-dark transition-all duration-300">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2 text-white font-serif">Location</h4>
+                            <p class="text-beige-300 font-light leading-relaxed max-w-sm text-lg">
+                                716, 60 Feet Main Road, opposite Shell Petrol Pump, RBI Layout, JP Nagar 7th Phase, Bengaluru, Karnataka 560078
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-6 group">
+                        <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0 text-gold border border-gold/30 group-hover:bg-gold group-hover:text-dark transition-all duration-300">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2 text-white font-serif">Business Hours</h4>
+                            <p class="text-beige-300 font-light text-lg">Everyday: 9:30 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-6 group">
+                        <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0 text-gold border border-gold/30 group-hover:bg-gold group-hover:text-dark transition-all duration-300">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2 text-white font-serif">Contact</h4>
+                            <p class="text-beige-300 font-light text-lg mb-3">+91 9964999586</p>
+                            <a href="https://wa.me/919964999586" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">
+                                Message on WhatsApp <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Side -->
+            <div class="lg:w-1/2 h-[500px] lg:h-auto">
+                <iframe src="https://maps.google.com/maps?q=Mumma's%20Girl%20Boutique,%20JP%20Nagar,%20Bangalore&t=&z=18&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; filter: grayscale(80%) contrast(120%) brightness(80%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0a0a] text-white py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <h2 class="font-serif text-3xl font-bold tracking-wider mb-2 text-gold">Mumma's Girl Boutique</h2>
+                    <p class="text-beige-300 text-xs tracking-widest uppercase">Redefining Elegance</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/binakacouture?igsh=OGIycTRiZmptZHY5" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-dark transition-all duration-300 text-xl" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/binaka.vineetverma/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-dark transition-all duration-300 text-xl" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500 uppercase tracking-widest font-light">
+                <p>&copy; 2026 Mumma's Girl Boutique. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gold transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-gold transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919964999586" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- App scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
