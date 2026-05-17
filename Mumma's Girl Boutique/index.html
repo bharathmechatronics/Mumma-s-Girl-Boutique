@@ -174,9 +174,9 @@
                 <div class="w-24 h-[1px] bg-gold mx-auto"></div>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                 <!-- Card 1 -->
-                <div class="group cursor-pointer reveal">
+                <div class="group cursor-pointer reveal" id="girls-couture-card">
                     <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
                         <img src="collection_girls_new.jpg" alt="Girls Designer Dresses" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
@@ -190,6 +190,18 @@
                 <!-- Card 2 -->
                 <div class="group cursor-pointer reveal" style="transition-delay: 150ms;">
                     <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
+                        <img src="collection_birthday.png" alt="Birthday Dress" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <div class="w-10 h-[1px] bg-gold mb-4 transform origin-left scale-0 group-hover:scale-100 transition-transform duration-500 delay-100"></div>
+                            <h3 class="font-serif text-2xl text-white mb-2">Birthday Dress</h3>
+                            <p class="text-xs text-beige-300 font-light uppercase tracking-wider mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">Enchanting celebration gowns</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="group cursor-pointer reveal" style="transition-delay: 300ms;">
+                    <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
                         <img src="mom_daughter_combo.jpg" alt="Mom Daughter Combo" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
@@ -199,8 +211,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="group cursor-pointer reveal" style="transition-delay: 300ms;">
+                <!-- Card 4 -->
+                <div class="group cursor-pointer reveal" style="transition-delay: 450ms;">
                     <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
                         <img src="collection_bridal.png" alt="Bridal Collection" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
@@ -211,8 +223,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 4 -->
-                <div class="group cursor-pointer reveal" style="transition-delay: 450ms;">
+                <!-- Card 5 -->
+                <div class="group cursor-pointer reveal" style="transition-delay: 600ms;">
                     <div class="img-hover-zoom h-[500px] overflow-hidden rounded-sm relative shadow-glow">
                         <img src="collection_party_new.jpg" alt="Party Wear" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
@@ -448,6 +460,38 @@
     <a href="https://wa.me/919964999586" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Girls Couture Modal -->
+    <div id="girls-couture-modal" class="fixed inset-0 z-[100] hidden bg-dark/95 backdrop-blur-md overflow-y-auto">
+        <div class="min-h-screen px-4 text-center flex items-center justify-center">
+            <div class="absolute inset-0" id="modal-backdrop"></div>
+            <div class="inline-block w-full max-w-6xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#151515] border border-white/10 shadow-xl rounded-sm relative z-10">
+                <div class="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+                    <h3 class="text-3xl font-serif text-white">Girls' Couture Collection</h3>
+                    <button id="close-modal-btn" class="text-white hover:text-gold transition-colors">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="group overflow-hidden rounded-sm border border-white/5">
+                        <img src="girls_couture_1.png" alt="Girls Couture 1" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="group overflow-hidden rounded-sm border border-white/5">
+                        <img src="girls_couture_2.jpg" alt="Girls Couture 2" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="group overflow-hidden rounded-sm border border-white/5">
+                        <img src="girls_couture_3.png" alt="Girls Couture 3" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="group overflow-hidden rounded-sm border border-white/5">
+                        <img src="girls_couture_4.png" alt="Girls Couture 4" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="group overflow-hidden rounded-sm border border-white/5">
+                        <img src="girls_couture_5.jpg" alt="Girls Couture 5" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- App scripts -->
     <script src="script.js"></script>

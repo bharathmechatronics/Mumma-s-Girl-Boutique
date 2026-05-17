@@ -61,6 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', closeMenu);
     });
 
+    // Girls Couture Modal Logic
+    const girlsCoutureCard = document.getElementById('girls-couture-card');
+    const girlsCoutureModal = document.getElementById('girls-couture-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+
+    function openModal() {
+        girlsCoutureModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeModal() {
+        girlsCoutureModal.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+
+    if (girlsCoutureCard && girlsCoutureModal) {
+        girlsCoutureCard.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
+        modalBackdrop.addEventListener('click', closeModal);
+    }
+
     // Scroll Reveal Animation
     function reveal() {
         var reveals = document.querySelectorAll(".reveal");
